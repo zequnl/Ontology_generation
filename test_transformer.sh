@@ -1,0 +1,1 @@
+python train.py --cuda --test --model trs --pretrain_emb --label_smoothing --noam --emb_dim 768 --hidden_dim 100 --batch_size 8 --save_path save/transformer_simp2/model_19_8.6364_0.0000_0.0000_28.0500_0.0000 --save_path_dataset save/transformer_simp2/

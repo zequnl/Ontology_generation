@@ -1,0 +1,1 @@
+python train-vae.py --cuda --test --model trs --pretrain_emb --label_smoothing --noam --emb_dim 768 --hidden_dim 100 --save_path save/vae_simp/model_18_12.2315_0.0000_0.0000_24.2800_0.0000 --save_path_dataset save/vae_simp/

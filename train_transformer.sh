@@ -1,0 +1,1 @@
+python train.py --cuda --model trs --pretrain_emb --noam --label_smoothing --emb_dim 768 --hidden_dim 100 --save_path save/transformer_simp2/ --batch_size 8 --max_enc_steps 600
