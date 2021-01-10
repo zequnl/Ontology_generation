@@ -342,10 +342,6 @@ class Transformer(nn.Module):
         ## loss: NNL if ptr else Cross entropy
         loss = self.criterion(logit.contiguous().view(-1, logit.size(-1)), dec_batch.contiguous().view(-1))
 
-        if(config.act):
-            loss+= self.compute_act_loss(self.encoder)
-            loss+= self.compute_act_loss(self.decoder)
-
         if(train):
             loss.backward()
             self.optimizer.step()
